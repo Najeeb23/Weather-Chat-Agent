@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-# Weather-Chat-Agent
+
+## Weather-Chat-Agent
 =======
-# 🌦️ Weather Chat Application
+## 🌦️ Weather Chat Application
 
 A simple **chat-based weather application** built with **React + Vite + Bootstrap**.  
 Users can ask weather-related queries, and the app responds in a conversational chat interface.
@@ -47,72 +47,52 @@ Users can ask weather-related queries, and the app responds in a conversational 
 
 ## ⚙️ Setup Instructions
 
-# -------------------------
-# 1️⃣ INITIAL PROJECT SETUP
-# -------------------------
+## -------------------------
+## 1️⃣ INITIAL PROJECT SETUP
+## -------------------------
 
-# Clone your project (or create a new folder if not cloned yet)
+## Clone your project (or create a new folder if not cloned yet)
 git clone https://github.com/your-username/weather-chat-app.git
 cd weather-chat-app
 
-# Initialize Git (if not already done)
+## Initialize Git (if not already done)
 git init
 git branch -M main
 
-# -------------------------
-# 2️⃣ INSTALL DEPENDENCIES
-# -------------------------
+## -------------------------
+## 2️⃣ INSTALL DEPENDENCIES
+## -------------------------
 
-# Install all packages listed in package.json
+## Install all packages listed in package.json
 npm install
 
-# -------------------------
-# 3️⃣ RUN PROJECT LOCALLY
-# -------------------------
+## -------------------------
+## 3️⃣ RUN PROJECT LOCALLY
+## -------------------------
 
-# Start development server
+## Start development server
 npm run dev
-# Project runs on http://localhost:5173
+## Project runs on http://localhost:5173
 
-# -------------------------
-# 4️⃣ ADD ENVIRONMENT VARIABLES
-# -------------------------
+## -------------------------
+## 4️⃣ ADD ENVIRONMENT VARIABLES
+## -------------------------
 
-# Create a .env file in project root with your API details
-echo "VITE_API_BASE=https://your-api-url.com/api/agents/weatherAgent/stream" >> .env
-echo "VITE_THREAD_ID=your-thread-id" >> .env
+## -------------------------
+## 5️⃣ PUSH TO GITHUB
+## -------------------------
 
-# -------------------------
-# 5️⃣ PUSH TO GITHUB
-# -------------------------
-
-# Add all project files
+## Add all project files
 git add .
 
-# Commit changes
+## Commit changes
 git commit -m "Initial commit: Weather Chat App"
 
-# Add your GitHub repository URL (replace with your repo link)
+## Add your GitHub repository URL (replace with your repo link)
 git remote add origin https://github.com/your-username/weather-chat-app.git
 
-# Push to GitHub
+## Push to GitHub
 git push -u origin main
-
-# -------------------------
-# 6️⃣ DEPLOY (OPTIONAL)
-# -------------------------
-
-# For Vercel (if installed globally)
-vercel
-
-# Or for Netlify
-netlify deploy
-
-# For GitHub Pages (install gh-pages first if needed)
-npm install gh-pages --save-dev
-npm run build
-git subtree push --prefix dist origin gh-pages
-
 
 ## 📸 Screenshots
 
@@ -128,14 +108,3 @@ Start the development server with:
 npm run dev
 The app will be available at:👉 http://localhost:5173
 
-📜 License
-
-This project is licensed under the MIT License.
-
-
----
-
-✅ This is a **ready-to-publish README**.  
-
-Do you also want me to write the **exact GitHub upload commands** (from `git init` to pushing with README) so you can publish your project step by step
->>>>>>> 47d3fe8 (Initial commit: Weather Chat App)
