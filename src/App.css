@@ -1,0 +1,154 @@
+/* Auto-scroll CSS - Add to your main CSS file */
+
+/* Smooth scrolling for all elements */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Chat container transitions */
+.chat-container {
+  transition: all 0.5s ease-in-out;
+}
+
+.chat-container.compact {
+  max-height: 600px;
+}
+
+.chat-container.expanded {
+  height: 100%;
+}
+
+/* Messages container with auto-scroll */
+.messages-area {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  max-height: 100%;
+}
+
+/* Custom scrollbar styling */
+.messages-area::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages-area::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.messages-area::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.messages-area::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Message animations */
+.message {
+  animation: fadeInUp 0.3s ease-out;
+  transform-origin: bottom;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typing indicator animation */
+.typing-indicator {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.typing-indicator span {
+  height: 8px;
+  width: 8px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: inline-block;
+  animation: typing 1.4s infinite ease-in-out both;
+}
+
+.typing-indicator span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes typing {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0;
+  }
+  
+  .chat-container {
+    padding: 0.5rem !important;
+  }
+  
+  .message {
+    max-width: 90% !important;
+  }
+}
+
+/* Auto-scroll optimization */
+.messages-container {
+  overflow-anchor: auto;
+}
+
+/* Ensure smooth scrolling in all browsers */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus management */
+.input-area input:focus,
+.input-area textarea:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Loading state for better UX */
+.message.streaming {
+  border-left: 3px solid #007bff;
+  animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+    border-left-color: #007bff;
+  }
+  50% {
+    border-left-color: #0056b3;
+  }
+  100% {
+    border-left-color: #007bff;
+  }
+}
+
+textarea.chat-input {
+  height: 35px !important;      /* fix small height */
+  vertical-align: top !important;
+  text-align: left !important;
+  padding-top: 6px !important;  /* push cursor to top */
+  line-height: 1.2 !important;  /* keep text compact */
+}
